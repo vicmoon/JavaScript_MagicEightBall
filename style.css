@@ -9,7 +9,7 @@
 body{
     width: 100vw;
     height: 100vh;
-    background-color: black;
+    background-color: #111;
     padding: 1rem;
     display: flex;
     flex-direction: column;
@@ -23,5 +23,52 @@ body{
 .app_title{
     font-size: 3rem;
     text-transform: uppercase;
+    padding: 2rem;
+    font-weight: 300;
 
+}
+
+.app_info{
+    text-align: justify;
+    text-justify: inter-word;
+    line-height: 1.5rem;
+    font-size: 1.6rem;
+    padding: 0 1rem;
+    margin: 2rem 0;
+}
+
+.magicBall_outer{
+    width: 500px;
+    height: 500px;
+    background-color: black;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:2rem 0;
+    border-radius: 50%;
+    border-radius: 50%;
+    background: #080808;
+    box-shadow: inset 15px 15px 11px #866d6d,
+            inset -15px -15px 11px #232222;
+
+}
+
+.magicBall_inner{
+    width: 200px;
+    height: 200px;
+    background: rgb(227, 207, 207);
+    border-radius: 50%;
+    display: flex;
+    color: #111;
+    justify-content: center;
+    align-items: center;
+}
+
+.magicBall_response{
+    font-size: 8rem;
+    text-align: center;
+    color: #241a1a;
+    line-height: 1.2rem;
+    
 }
