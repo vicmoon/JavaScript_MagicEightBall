@@ -49,8 +49,8 @@ body{
     border-radius: 50%;
     border-radius: 50%;
     background: #080808;
-    box-shadow: inset 15px 15px 11px #866d6d,
-            inset -15px -15px 11px #232222;
+    box-shadow: inset 15px 15px 11px #866d6d,inset -15px -15px 11px #232222;
+    cursor: pointer;
 
 }
 
@@ -63,6 +63,8 @@ body{
     color: #111;
     justify-content: center;
     align-items: center;
+    z-index: 999;
+
 }
 
 .magicBall_response{
@@ -71,4 +73,77 @@ body{
     color: #241a1a;
     line-height: 1.2rem;
     
+
+
+}
+.magicBall_spotlight {
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    opacity: 0.2;
+    background: #535151;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+}
+
+.magicBall_bg_shadow {
+    position: absolute;
+    width: 147px;
+    height: 147px;
+    border-radius: 50%;
+    background-color: rgb(113, 157, 200);
+    opacity: 0.2;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+}
+
+.magicBall_upper_shadow {
+    position: absolute;
+    width: 75px;
+    height: 75px;
+    background: #9e9a9a;
+    opacity: 0.8;
+    border-radius: 50%;
+    transform: translate(-70%, -70%);
+    top: 50%;
+    left: 50%;
+}
+
+.magicBall_lower_shadow {
+    position: absolute;
+    width: 175px;
+    height: 175px;
+    background: #9e9a9a;
+    opacity: 0.8;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+}
+
+
+.animate{
+    animation-name: shake-it;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+    animation-fill-mode : forwards;
+
+}
+
+@keyframes shake-it {
+    0% { transform: translate(0, 0) rotate(0deg) scale(1); }
+    10% { transform: translate(10px, 10px) rotate(20deg) scale(1.1); }
+    20% { transform: translate(0, 0) rotate(0deg) scale(1); }
+    30% { transform: translate(-10px, -10px) rotate(-20deg) scale(1.1); }
+    40% { transform: translate(0, 0) rotate(0deg) scale(1); }
+    50% { transform: translate(-10px, -10px) rotate(20deg) scale(1.1); }
+    60% { transform: translate(0, 0) rotate(0deg) scale(1); }
+    70% { transform: translate(10px, 10px) rotate(-20deg) scale(1.1); }
+    80% { transform: translate(0, 0) rotate(0deg) scale(1); }
+    90% { transform: translate(-10px, -10px) rotate(20deg) scale(1.1); }
+    100% { transform: translate(0, 0) rotate(0deg) scale(1); }
 }
